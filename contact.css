@@ -1,0 +1,119 @@
+:root{
+    --green-lighter: hsl(148, 38%, 91%);
+    --Green-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    ---Grey500-medium: hsl(186, 15%, 59%);
+    --Grey900darker: hsl(187, 24%, 22%);
+    --font-family: "Karla", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--green-lighter);
+    font-family: var(--font-family);
+}
+form{
+    background-color: var(--White);
+    margin: 30px;
+    padding: 15px 10PX;
+}
+h4{
+    color: var(--Grey900darker);
+    margin-bottom: 25px;
+}
+
+label{
+    color: var(--Green-medium);
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+.general-input{
+    padding: 10px;
+    border: 1px solid var(---Grey500-medium);
+    border-radius: 7px;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+}
+
+.general-input:hover{
+    color: red;
+}
+
+.radio-1{
+    border: 1px solid var(---Grey500-medium);
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.query2 {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 25px;
+}
+
+textarea{
+    height: 200px;
+    border-radius: 7px;
+    border: 1px solid var(---Grey500-medium);
+    margin: 15px 0 35px;
+}
+
+.down{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    color: var(--White);
+    background-color: var(--Green-medium);
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.query{
+    margin-bottom: 1rem;
+    color: var(--Green-medium);
+}
+
+@media (min-width: 768px) {
+    form{
+        width: 80%;
+        max-width: 764px;
+        margin: 5rem auto;
+        padding: 30px 40px;
+    }
+    .names{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .text{
+        width: 100%;
+    }
+    .query2{
+        flex-direction: row;
+    }
+    .radio-1{
+        width: 100%;
+        max-width: 764px;
+    }
+}

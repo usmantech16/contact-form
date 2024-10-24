@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact2.css" />
+</head>
+
+<body>
+  <form>
+    <h4>Contact Us</h4>
+    <div class="names">
+      <div>
+        <label for="name">First Name *</label>
+        <input type="text" id="name" name="name" required class="general-input" />
+      </div>
+      <div>
+        <label for="name">Last Name *</label>
+        <input type="text" id="name" name="name" required class="general-input" />
+      </div>
+    </div>
+    <div>
+      <label for="email">Email Address *</label>
+      <input type="email" name="email" id="email" required class="general-input" />
+    </div>
+    <div>
+      <label for="click">Query Type *</label>
+      <div class="radio-1">
+        <input type="radio" id="click" name="query" />
+        <label for="click">General Enquiry</label>
+      </div>
+      <div class="radio-1">
+        <input type="radio" id="request" name="query" />
+        <label for="request">Support Request</label>
+      </div>
+    </div>
+    <div>
+      <label for="text">Message *</label>
+      <textarea name="" id="text"></textarea>
+    </div>
+    <div class="down">
+      <input type="checkbox" id="click" />
+      <label for="click">I consent to be contacted by the team *</label>
+    </div>
+    <button>Submit</button>
+  </form>
+</body>
+
+</html>
